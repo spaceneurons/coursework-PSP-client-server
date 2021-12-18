@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.AddUpdateService">
+    <children>
+        <TextField fx:id="nameField" layoutX="220.0" layoutY="109.0" />
+        <TextField fx:id="timeField" layoutX="220.0" layoutY="150.0" />
+        <TextField fx:id="priceField" layoutX="219.0" layoutY="191.0" />
+        <Button fx:id="btnLogOut" layoutX="451.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="391.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+        <Label layoutX="108.0" layoutY="155.0" text="Страна: ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+        <Label layoutX="170.0" layoutY="196.0" text="Цена: ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+        <Button fx:id="btnSave" layoutX="260.0" layoutY="243.0" mnemonicParsing="false" onAction="#onSave" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Сохранить" />
+      <Label layoutX="159.0" layoutY="114.0" text="Рейс: ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

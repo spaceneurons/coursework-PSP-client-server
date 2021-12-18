@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.AddEmplServ">
+    <children>
+        <TableView fx:id="employeeTable" layoutX="169.0" layoutY="61.0" onMouseClicked="#OnMouseClickedEmployee" opacity="0.76" prefHeight="134.0" prefWidth="316.0">
+            <columns>
+                <TableColumn fx:id="emplName" minWidth="100.0" prefWidth="156.0" text="Имя" />
+                <TableColumn fx:id="surname" prefWidth="160.0" text="Фамилия" />
+            </columns>
+        </TableView>
+        <TableView fx:id="serviceTable" layoutX="117.0" layoutY="222.0" onMouseClicked="#OnMouseClickedServices" opacity="0.76" prefHeight="119.0" prefWidth="421.0">
+            <columns>
+                <TableColumn fx:id="name" minWidth="100.0" prefWidth="170.0" text="Рейс" />
+                <TableColumn fx:id="time" prefWidth="128.0" text="Страна" />
+                <TableColumn fx:id="price" prefWidth="122.0" text="Цена" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="555.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="488.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+        <Button fx:id="btnSave" layoutX="281.0" layoutY="361.0" mnemonicParsing="false" onAction="#onSave" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Сохранить" />
+    </children>
+</AnchorPane>

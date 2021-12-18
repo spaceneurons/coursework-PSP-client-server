@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.ManageUsers">
+    <children>
+        <TableView fx:id="clientsTable" layoutX="11.0" layoutY="52.0" onMouseClicked="#OnMouseClicked" opacity="0.76" prefHeight="282.0" prefWidth="602.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="FIO" minWidth="100.0" prefWidth="200.0" text="ФИО" />
+                <TableColumn fx:id="email" prefWidth="180.0" text="Эл.почта" />
+                <TableColumn fx:id="phone" prefWidth="180.0" text="Номер" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="474.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="549.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnAdd" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Добавить" />
+      <Button fx:id="btnEdit" layoutX="98.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnEdit" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Редактировать" />
+      <Button fx:id="btnDelete" layoutX="220.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnDelete" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Удалить" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+.glass-grey {
+    -fx-background-color:
+            #ffffff,
+            radial-gradient(center 50% -40%, radius 200%, #ffffff 45%, rgb(255, 255, 255) );
+}

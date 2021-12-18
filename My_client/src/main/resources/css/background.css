@@ -1,0 +1,10 @@
+.bodybg{
+    -fx-background-image: url('../images/startpage.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+.adminbg{
+    -fx-background-image: url('../images/adminbackground.jpg');
+    -fx-background-size: 100% 100%;
+}
+

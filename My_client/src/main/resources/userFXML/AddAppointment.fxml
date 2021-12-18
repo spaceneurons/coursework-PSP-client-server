@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="496.0" prefWidth="720.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userFXML.AddAppointment">
+    <children>
+        <TableView fx:id="employeeTable" layoutX="28.0" layoutY="265.0" onMouseClicked="#OnMouseClickedEmployee" opacity="0.76" prefHeight="175.0" prefWidth="316.0">
+            <columns>
+                <TableColumn fx:id="emplName" minWidth="100.0" prefWidth="156.0" text="Имя" />
+                <TableColumn fx:id="surname" prefWidth="160.0" text="Фамилия" />
+            </columns>
+        </TableView>
+        <TableView fx:id="serviceTable" layoutX="266.0" layoutY="89.0" onMouseClicked="#OnMouseClickedServices" opacity="0.76" prefHeight="109.0" prefWidth="420.0">
+            <columns>
+                <TableColumn fx:id="name" minWidth="100.0" prefWidth="170.0" text="Рейс" />
+                <TableColumn fx:id="time" prefWidth="100.0" text="Страна" />
+                <TableColumn fx:id="price" prefWidth="150.0" text="Цена" />
+            </columns>
+        </TableView>
+        <TableView fx:id="clientsTable" layoutX="381.0" layoutY="265.0" onMouseClicked="#OnMouseClickedClients" opacity="0.76" prefHeight="175.0" prefWidth="289.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="FIO" minWidth="100.0" prefWidth="250.0" text="ФИО" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="555.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="488.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Назад" />
+        <Button fx:id="btnSave" layoutX="281.0" layoutY="454.0" mnemonicParsing="false" onAction="#onSave" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Сохранить" />
+      <DatePicker fx:id="dateChoice" layoutX="28.0" layoutY="95.0" />
+      <ComboBox fx:id="timeChoice" layoutX="28.0" layoutY="158.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label fx:id="text3" layoutX="266.0" layoutY="63.0" text="Выберите рейс" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="text4" layoutX="28.0" layoutY="240.0" text="Выберите сопровождающего" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="text1" layoutX="28.0" layoutY="71.0" text="Дата" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="text2" layoutX="28.0" layoutY="136.0" text="Время" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="text5" layoutX="381.0" layoutY="240.0" text="Закрепите за туристом сотрудника" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+    </children>
+   <stylesheets>
+      <URL value="@../css/stylesheet.css" />
+      <URL value="@../css/background.css" />
+   </stylesheets>
+</AnchorPane>

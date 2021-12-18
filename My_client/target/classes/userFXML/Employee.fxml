@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id = "employee" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userFXML.Employee">
+    <children>
+        <TableView fx:id="employeeTable" layoutX="41.0" layoutY="59.0" opacity="0.76" prefHeight="282.0" prefWidth="555.0">
+            <columns>
+                <TableColumn fx:id="name" minWidth="100.0" prefWidth="200.0" text="Имя" />
+                <TableColumn fx:id="surname" prefWidth="180.0" text="Фамилия" />
+                <TableColumn fx:id="services" prefWidth="180.0" text="Рейсы" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="474.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="547.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Назад" />
+    </children>
+</AnchorPane>

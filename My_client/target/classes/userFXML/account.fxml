@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="700.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userFXML.Account">
+   <children>
+      <Button fx:id="btnExit" layoutX="624.0" layoutY="400.0" mnemonicParsing="false" onAction="#Exit_Pressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выход">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnManageAccount" layoutX="413.0" layoutY="2.0" mnemonicParsing="false" onAction="#Manage_Account_Pressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Управление аккаунтом">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="btnServices" layoutX="185.0" layoutY="2.0" mnemonicParsing="false" onAction="#Services_Pressed" prefHeight="35.0" prefWidth="200.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Возможные рейсы">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="btnMakeAppointment" layoutX="190.0" layoutY="80.0" mnemonicParsing="false" onAction="#Make_Appointment_Pressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выбрать рейс">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInformation" layoutX="3.0" layoutY="80.0" mnemonicParsing="false" onAction="#Get_Information_Pressed" prefHeight="33.0" prefWidth="175.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Полеты">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="315.0" layoutY="214.0" />
+
+      <Button fx:id="btnChangeTheme" layoutY="3.0" mnemonicParsing="false" onAction="#Change_Theme_Pressed" prefHeight="30.0" prefWidth="175.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Изменить тему">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

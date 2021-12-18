@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="1" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userFXML.ManageAccount">
+    <children>
+        <TableView fx:id="clientsTable" layoutX="43.0" layoutY="182.0" onMouseClicked="#OnMouseClicked" opacity="0.76" prefHeight="171.0" prefWidth="562.0">
+            <columns>
+                <TableColumn fx:id="FIO" minWidth="100.0" prefWidth="228.0" text="ФИО" />
+                <TableColumn fx:id="email" minWidth="2.0" prefWidth="152.0" text="Эл.почта" />
+                <TableColumn fx:id="phone" prefWidth="180.0" text="Номер" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnBack" layoutX="510.0" layoutY="2.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Назад" />
+        <Button fx:id="btnAdd" layoutX="166.0" layoutY="372.0" mnemonicParsing="false" onAction="#OnAdd" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Добавить" />
+        <Button fx:id="btnEdit" layoutX="258.0" layoutY="372.0" mnemonicParsing="false" onAction="#OnEdit" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Редактировать" />
+        <Button fx:id="btnDelete" layoutX="393.0" layoutY="372.0" mnemonicParsing="false" onAction="#OnDelete" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Удалить" />
+
+      <Button fx:id="btnEditUser" layoutX="113.0" layoutY="85.0" mnemonicParsing="false" onAction="#editUserPressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Изменить логин/пароль" />
+      <Button fx:id="btnDeleteUser" layoutX="368.0" layoutY="85.0" mnemonicParsing="false" onAction="#deleteUserPressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Удалить аккаунт" />
+      <Button fx:id="btnExit" layoutX="578.0" layoutY="2.0" mnemonicParsing="false" onAction="#onExit" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выход" />
+    </children>
+
+</AnchorPane>

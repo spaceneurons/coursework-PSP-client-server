@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="397.0" prefWidth="651.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.ManageAppointments">
+    <children>
+        <TableView fx:id="appointmentTable" layoutX="24.0" layoutY="71.0" onMouseClicked="#OnMouseClicked" opacity="0.76" prefHeight="282.0" prefWidth="643.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="date" minWidth="100.0" prefWidth="120.0" text="Дата" />
+                <TableColumn fx:id="start" minWidth="100.0" prefWidth="120.0" text="Вылет" />
+                <TableColumn fx:id="end" prefWidth="120.0" text="Сколько лететь" />
+                <TableColumn fx:id="service" prefWidth="120.0" text="Рейс" />
+                <TableColumn fx:id="client" prefWidth="120.0" text="Турист" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="543.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="617.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+        <Button fx:id="btnDelete" layoutX="24.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnDelete" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Удалить" />
+        <Button fx:id="btnSort" layoutX="99.0" layoutY="361.0" mnemonicParsing="false" onAction="#onSort" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Сортировать" />
+        <Button fx:id="btnFilter" layoutX="519.0" layoutY="46.0" mnemonicParsing="false" onAction="#onFilter" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Фильтровать даты" />
+        <Button fx:id="btnSearch" layoutX="193.0" layoutY="46.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="25.0" prefWidth="75.0" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Поиск" />
+        <Button fx:id="btnReset" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#onReset" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Сбросить" />
+      <TextField fx:id="searchField" layoutX="22.0" layoutY="46.0" />
+      <Label layoutX="21.0" layoutY="27.0" text="Введите:" />
+      <Label layoutX="307.0" layoutY="27.0" text="От:" />
+      <Label layoutX="412.0" layoutY="27.0" text="До:" />
+      <DatePicker fx:id="doField" layoutX="412.0" layoutY="46.0" prefHeight="25.0" prefWidth="107.0" />
+      <DatePicker fx:id="otField" layoutX="305.0" layoutY="46.0" prefHeight="25.0" prefWidth="107.0" />
+      <Button fx:id="btnStatistic" layoutX="206.0" layoutY="361.0" mnemonicParsing="false" onAction="#onStatistic" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Статистика" />
+      <Button fx:id="btnCheck" layoutX="305.0" layoutY="361.0" mnemonicParsing="false" onAction="#onCheck" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Сформировать отчет на рейс" />
+    </children>
+
+</AnchorPane>

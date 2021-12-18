@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddUpdateClient">
+   <children>
+      <TextField fx:id="nameField" layoutX="220.0" layoutY="99.0" />
+      <TextField fx:id="surnameField" layoutX="220.0" layoutY="140.0" />
+      <TextField fx:id="emailField" layoutX="220.0" layoutY="226.0" />
+      <TextField fx:id="phoneField" layoutX="220.0" layoutY="181.0" />
+      <Button fx:id="btnLogOut" layoutX="451.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+      <Button fx:id="btnBack" layoutX="391.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+      <Label layoutX="172.0" layoutY="104.0" prefHeight="16.0" prefWidth="42.0" text="Имя: ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="142.0" layoutY="145.0" text="Фамилия: ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="186.0" text="Номер телефона: ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="135.0" layoutY="231.0" text="Эл. почта:">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Button fx:id="btnSave" layoutX="254.0" layoutY="272.0" mnemonicParsing="false" onAction="#onSave" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Сохранить" />
+   </children>
+</AnchorPane>

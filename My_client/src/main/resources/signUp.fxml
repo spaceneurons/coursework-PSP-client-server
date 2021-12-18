@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp">
+    <children>
+        <ImageView fitHeight="499.0" fitWidth="700.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/regist.jpg" />
+            </image>
+        </ImageView>
+        <PasswordField fx:id="passwordfieldPassword" layoutX="464.0" layoutY="115.0" />
+        <PasswordField fx:id="passwordfieldConfirmPassword" layoutX="462.0" layoutY="181.0" />
+        <Label layoutX="65.0" layoutY="122.0" text="Пароль:">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label layoutX="65.0" layoutY="182.0" text="Подтверждение пароля:">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Button fx:id="buttonSignUp" layoutX="118.0" layoutY="365.0" mnemonicParsing="false" onAction="#Signup_Pressed" prefHeight="25.0" prefWidth="124.0" text="Регистрация" />
+        <Button fx:id="buttonBack" layoutX="473.0" layoutY="365.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="25.0" prefWidth="124.0" text="Назад" />
+        <Label layoutX="65.0" layoutY="68.0" text="Логин:">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <TextField fx:id="textfieldLogin" layoutX="464.0" layoutY="58.0" />
+        <Label fx:id="labelMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="319.0" prefHeight="21.0" prefWidth="639.0" text="error" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label layoutX="265.0" layoutY="14.0" text="Регистрация">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
